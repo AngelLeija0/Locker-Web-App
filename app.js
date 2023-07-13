@@ -77,7 +77,7 @@ function addToHistory() {
 function showHistory() {
   const history = window.localStorage.getItem("history");
   history.split(",").map((value) => {
-    lockerHistory.innerHTML += `· ${value}<br>`;
+    value !== "" ? lockerHistory.innerHTML += `· ${value}<br>` : '';    
   });
 }
 
@@ -125,4 +125,4 @@ function connectingToArduino() {
   }
 }
 
-//setInterval(connectingToArduino, 1000);
+setInterval(connectingToArduino, 5000);
