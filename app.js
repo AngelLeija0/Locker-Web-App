@@ -98,7 +98,7 @@ function countdown() {
 }
 
 function toggleLocker(state) {
-  return fetch(`http://192.168.173.180/${state ? "relay-on" : "relay-off"}`, {
+  return fetch(`http://192.168.155.180/${state ? "relay-on" : "relay-off"}`, {
     method: "GET",
   })
     .then((response) => response.text())
@@ -109,7 +109,7 @@ function toggleLocker(state) {
 
 function connectingToArduino() {
   try {
-    fetch('http://192.168.173.180/board-state', {
+    fetch('http://192.168.155.180/board-state', {
       method: "GET",
     })
       .then((response) => response.text())
