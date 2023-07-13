@@ -353,6 +353,9 @@ body {
   .label-lock {
     font-size: 34px;
   }
+  .timmer-lock {
+    font-size: 18px;
+  }
   .icon-lock {
     font-size: 18vh;
   }

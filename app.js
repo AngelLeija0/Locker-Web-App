@@ -76,6 +76,7 @@ function addToHistory() {
 
 function showHistory() {
   const history = window.localStorage.getItem("history");
+  lockerHistory.innerHTML = '';
   history.split(",").map((value) => {
     value !== "" ? lockerHistory.innerHTML += `· ${value}<br>` : '';    
   });
