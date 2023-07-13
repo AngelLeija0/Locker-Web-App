@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Locker Web App</title>
+</head>
+
+<body onload="isLogin()">
+  <div class="box">
+    <span class="border-line"></span>
+    <form>
+      <h2>Sign in</h2>
+      <div class="inputBox">
+        <input type="text" required="required" id="input-username">
+        <span>Username</span>
+        <i></i>
+      </div>
+      <div class="inputBox">
+        <input type="password" required="required" id="input-password">
+        <span>Password</span>
+        <i></i>
+      </div>
+      <input type="button" value="Login" id="btn-login">
+    </form>
+  </div>
+</body>
+<script src="login.js"></script>
+
+</html>
